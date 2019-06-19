@@ -1,3 +1,4 @@
+#Python script for analyzing the financial records of a company.
 #Import modules
 import os
 import csv
@@ -47,7 +48,7 @@ with open(csvpath, newline='') as csvfile:
         if k==(indmax[0]+1):
            maxi.append(row[0])   
         k=k+1  
-         
+
 # Guardamos en un string las fechas de los minimos y
 # maximos cambios concatenadas con sus respectivos valores.       
     minimo= str(mini[0]) + " " + "($ "+ str(change[indmin[0]])+")"
